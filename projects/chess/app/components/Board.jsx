@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Knight from './Knight';
 import BoardSquare from './BoardSquare';
-import {canMoveKnight, moveKnight} from './Game';
 import {DragDropContext} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
@@ -13,12 +12,6 @@ export default class Board extends Component{
             PropTypes.number.isRequired
         ).isRequired
     };
-
-    handleSquareClick(toX, toY){
-        if(canMoveKnight(toX, toY)){
-            moveKnight(toX, toY);
-        }
-    }
 
     renderSquare(i){
         const x = i % 8;
