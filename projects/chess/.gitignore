@@ -1,0 +1,10 @@
+logs
+*.log
+npm-debug.log*
+.npm
+node_modules
+build
+.DS_Store
+lib
+.eslintcache
+.idea
