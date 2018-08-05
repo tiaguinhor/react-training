@@ -1,8 +1,9 @@
 let knightPosition = [1, 7];
+let knightPosition2 = [7, 7];
 let observer = null;
 
 function emitChange(){
-    observer(knightPosition);
+    observer(knightPosition, knightPosition2);
 }
 
 export function observe(receive) {
